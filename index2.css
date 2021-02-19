@@ -1,0 +1,71 @@
+.hero-wrapper {
+  height: 100vh;
+  width: 100%;
+  background: url('/assets/img/hero-img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+hr {
+ border-right: 2px solid #ffc107;
+ height: 100px;
+}
+
+.logo-social {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  transform:scale(1.25)
+  transition: all .3s;
+}
+
+.logoImage {
+  width: 250px;
+  z-index: 1;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.button-wrapper button {
+  margin-top: -50px;
+  width: 130px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons i {
+  font-size: 20px;
+  color: #627C85;
+  margin-bottom: 5px;
+}
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-linkedin:hover {
+  color: #0a66c2;
+}
+
+.fa-github:hover{
+  color: #000;
+}
+
+.fa-instagram:hover{
+  color: #c32aa3;
+}

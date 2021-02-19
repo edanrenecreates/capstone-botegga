@@ -18,7 +18,7 @@
 } */
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 nav {
   width: 100%;
@@ -39,7 +39,7 @@ nav .nav-item {
   border: 3px solid var(--blue-color);
   border-radius: 6px;
   height: fit-content;
-  width: 97vw;
+  width: 95vw;
   margin: 30px;
 }
 
@@ -49,14 +49,23 @@ nav .nav-item {
   font-weight: 200;
 }
 
+h2 {
+  margin-top: -40px;
+}
+
 h2 span {
   color: var(--yellow-color);
   text-decoration: underline;
 }
 
+h4 {
+  margin-bottom: -30px;
+}
+
 .content-wrapper {
   width: 90vw;
   height:fit-content;
+  padding: 50px 0;
 }
 
 .panel {
@@ -80,6 +89,10 @@ h2 span {
   left: 20px;
   margin: 0;
   opacity: 0;
+}
+
+.dark-title {
+  color: var(--blue-color);
 }
 
 .panel.active {

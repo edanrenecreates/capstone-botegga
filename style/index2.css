@@ -1,0 +1,96 @@
+:root {
+  --header-font: 'Raleway', sans-serif !important;
+  --body-font: 'Poppins', sans-serif !important;
+  --blue-color: #627c85;
+  --yellow-color: #ffbf00;
+  --left-bg-color: rgba(87, 84, 236, 0.7);
+  --right-bg-color: rgba(43, 43, 43, 0.8);
+  --left-btn-hover-color: rgba(216, 215, 212, 0.7);
+  --right-btn-hover-color: rgba(298, 12, 133, 0.7);
+}
+
+.navbar-brand img {
+ width: 150px;
+}
+
+.hero-wrapper {
+  height: 100vh;
+  width: 100%;
+  background: url('/img/hero-img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+hr {
+ border-right: 2px solid #ffc107;
+ height: 200px;
+}
+
+
+.logo-social-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  margin-right: 100px;
+}
+
+.logoImage {
+  width: 400px;
+  z-index: 1;
+  margin-bottom: -10px;
+}
+
+
+.button-wrapper {
+  display: flex;
+  justify-self: space-around;
+  flex-direction: column;
+  padding-right: 100px;
+}
+
+.button-wrapper button {
+  margin-top: -50px;
+  width: 150px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.button-wrapper button:hover {
+  transform: scale(.97);
+  color: var(--blue-color);
+  background-color: transparent;
+  border: 1px solid var(--yellow-color);
+
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  margin-right: -70px;
+}
+
+.social-icons i {
+  font-size: 24px;
+  color: #627C85;
+  margin-bottom: 5px;
+}
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-linkedin:hover {
+  color: #0a66c2;
+}
+
+.fa-github:hover{
+  color: #000;
+}
+
+.fa-instagram:hover{
+  color: #c32aa3;
+}

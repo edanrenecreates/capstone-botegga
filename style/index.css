@@ -1,0 +1,140 @@
+:root {
+  --header-font: 'Raleway', sans-serif !important;
+  --body-font: 'Poppins', sans-serif !important;
+  --blue-color: #627c85;
+  --speed: 500ms;
+  --yellow-color: #ffbf00;
+  --left-bg-color: rgba(87, 84, 236, 0.7);
+  --right-bg-color: rgba(43, 43, 43, 0.8);
+  --left-btn-hover-color: rgba(216, 215, 212, 0.7);
+  --right-btn-hover-color: rgba(298, 12, 133, 0.7);
+  --hover-width: 75%;
+  --other-width: 25%;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav .nav-item {
+  font-size: 1.6rem;
+  font-family: var(--body-font);
+  font-weight: normal;
+}
+
+.navbar ul li a:hover {
+  color: var(--yellow-color) !important;
+  text-decoration: underline;
+  text-underline-offset: 0.1rem;
+  transition: all 0.3s ease;
+}
+
+.container-fluid {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  z-index: -1;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-font);
+}
+
+h1 {
+  font-size: 3.75rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  border: 1px solid #ffbf00;
+  background: #ffbf00;
+  border-radius: 20px;
+  width: 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 15rem;
+  padding: 0.5;
+}
+
+.split.left .btn:hover {
+  background-color: #627c85;
+  border-color: #627c85;
+}
+
+.split.right .btn:hover {
+  background-color: #627c85;
+  border-color: #627c85;
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.split.left {
+  background: url('../assets/img/hero-l.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.right,
+.split.left,
+.split.right::before,
+.split.left::before {
+  transition: all 500ms ease-in-out;
+}
+
+.split.right {
+  right: 0;
+  background: url('../assets/img/hero-r.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hover-left .left {
+  width: 75%;
+}
+
+.hover-left .right {
+  width: 25%;
+}
+
+.hover-right .right {
+  width: 75%;
+}
+
+.hover-right .left {
+  width: 25%;
+}
+
+@media (max-width: 800px) {
+  .btn {
+    width: 12rem;
+    padding: 1.2rem;
+  }
+}

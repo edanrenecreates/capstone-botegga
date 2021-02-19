@@ -1,0 +1,121 @@
+:root {
+  --header-font: 'Raleway', sans-serif !important;
+  --body-font: 'Poppins', sans-serif !important;
+  --blue-color: #627c85;
+  --speed: 500ms;
+  --yellow-color: #ffbf00;
+  --left-bg-color: rgba(87, 84, 236, 0.7);
+  --right-bg-color: rgba(43, 43, 43, 0.8);
+  --left-btn-hover-color: rgba(216, 215, 212, 0.7);
+  --right-btn-hover-color: rgba(298, 12, 133, 0.7);
+  --hover-width: 75%;
+  --other-width: 25%;
+  font-size: 62.5%;
+}
+
+.navbar-brand img {
+ width: 150px;
+}
+
+.container-fluid-about {
+  height: auto;
+  border: 3px solid var(--blue-color);
+  border-radius: 6px;
+  width: auto;
+  margin: 30px;
+}
+.container-fluid-about h2 {
+  font-size: 5.6rem;
+  font-family: var(--header-font) !important;
+  font-weight: 200;
+}
+nav .nav-item {
+  font-size: 1.6rem;
+  font-family: var(--body-font);
+  font-weight: normal;
+}
+.navbar ul li a:hover {
+  color: var(--yellow-color) !important;
+  text-decoration: underline;
+  text-underline-offset: 0.1rem;
+}
+
+.about-section-wrapper {
+  margin: 20px;
+}
+
+.about-header {
+  margin-bottom: -5px;
+}
+
+h2 span {
+  color: var(--yellow-color);
+  text-decoration: underline;
+}
+
+.left-col img {
+  width: 500px;
+  border-radius: 20px;
+}
+
+.right-col h3 {
+  font-family: var(--header-font);
+  font-size: 3.2rem;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+  font-weight: 500;
+  color: var(--blue-color);
+}
+
+.right-col p {
+  width: 90%;
+  max-width: 640px;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.1px;
+  font-weight: 200;
+  font-family: var(--body-font);
+}
+
+.social-contact .btn {
+  color: #fff;
+  width: 150px;
+  font-size: 1.6rem;
+}
+
+.social-contact .btn:hover {
+  transform: scale(.97);
+  background-color: transparent;
+  border: 1px solid var(--yellow-color);
+  color: var(--blue-color);
+}
+.social>i {
+  font-size: 2.4rem;
+  color: var(--blue-color);
+}
+.social i:hover {
+  transform: scale(1.2);
+}
+.social .fa-github:hover {
+  color: #000;
+}
+.social .fa-twitter:hover {
+  color: #1da1f2;
+}
+.social .fa-linkedin:hover {
+  color: #0e76a8;
+}
+.social .fa-instagram:hover {
+  color: #c32aa3;
+}
+.about-skills {
+  width: 75%;
+}
+.about-skills i {
+  color: var(--blue-color);
+  font-size: 2rem;
+}
+.about-skills h4{
+  color: var(--yellow-color);
+  margin-top: 5px;
+}
